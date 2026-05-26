@@ -90,15 +90,16 @@
         <div class="header">
             <div class="logo">🏀</div>
             <h1>Privacy Policy</h1>
-            <p class="subtitle">Last Updated: January 2026</p>
+            <p class="subtitle">Last Updated: May 2026</p>
         </div>
 
         <h2>1. Information We Collect</h2>
         <p><span class="highlight">Hoops</span> is designed with your privacy in mind. We collect minimal data to provide our services:</p>
         <ul>
             <li><strong>Session Data:</strong> Basketball shooting sessions you log (makes, shot types, duration) are stored locally on your device and optionally synced via iCloud if you have it enabled.</li>
+            <li><strong>Profile Information You Provide:</strong> During onboarding you may optionally provide a player name, court position, preferred shot type, and where you heard about Hoops. This information is stored on your device and used to personalize the experience (for example, on your in-app jersey).</li>
             <li><strong>Subscription Information:</strong> If you subscribe to Premium, RevenueCat (our payment processor) processes your purchase. We receive confirmation of your subscription status but do not access your payment details directly.</li>
-            <li><strong>Anonymous Analytics:</strong> We may collect anonymous, aggregated usage statistics to improve the app. This data cannot identify you personally.</li>
+            <li><strong>Product Analytics:</strong> We use PostHog to collect anonymous product analytics so we can understand how the app is used and improve it. These events are tied to a randomly generated, per-install identifier — not to your Apple ID, email, or any account you can sign into. The events we send are listed in Section 5.</li>
         </ul>
 
         <h2>2. How We Use Your Information</h2>
@@ -106,8 +107,8 @@
         <ul>
             <li>Provide and maintain the app's core functionality</li>
             <li>Process and manage Premium subscriptions</li>
-            <li>Improve our services through anonymous analytics</li>
-            <li>Send streak reminders (if you have them enabled)</li>
+            <li>Understand product usage and improve the app through analytics</li>
+            <li>Send notifications you have enabled — session completion notifications when a watch session finishes, and daily streak reminders</li>
         </ul>
 
         <h2>3. Data Storage</h2>
@@ -115,6 +116,7 @@
             <li>Your shooting session data is stored locally on your device</li>
             <li>If you enable iCloud sync, your data syncs across your Apple devices via Apple's secure iCloud service</li>
             <li>Subscription status is managed securely by RevenueCat</li>
+            <li>Analytics events are sent to PostHog Cloud (US region) and retained according to PostHog's standard retention policy</li>
         </ul>
 
         <h2>4. Third-Party Services</h2>
@@ -122,27 +124,37 @@
         <ul>
             <li><strong>Apple:</strong> iCloud sync and App Store payment processing</li>
             <li><strong>RevenueCat:</strong> Subscription and in-app purchase management</li>
+            <li><strong>PostHog:</strong> Anonymous product analytics. See <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's privacy policy</a>.</li>
         </ul>
         <p>Each of these services has their own privacy policy governing their use of your data.</p>
 
-        <h2>5. Data Sharing</h2>
+        <h2>5. Analytics Details</h2>
+        <p>To be transparent about what we send to PostHog, here is the full list of events and the optional profile properties attached to them:</p>
+        <p><strong>Events we send:</strong> app opened, onboarding started / step completed / completed, attribution source selected, first session completed, session completed (phone or watch), session limit reached, locked stat tapped, paywall shown / dismissed, purchase succeeded / failed, weekly streak broken, and notification permission result.</p>
+        <p><strong>Profile properties attached to your install:</strong> install date, days since install, app version and build number, subscription status, and — if you provided them during onboarding — player name, player position, preferred shot type, and attribution source.</p>
+        <p><strong>What we do not send:</strong> your name as it appears on your Apple ID, your email, your contacts, your location, advertising identifiers (IDFA), or any data that would let us identify you outside the app.</p>
+        <p><strong>When analytics is disabled:</strong> Analytics is disabled in development builds, on the iOS Simulator, and in TestFlight / sandbox builds. Only the production App Store build sends events to PostHog.</p>
+
+        <h2>6. Data Sharing</h2>
         <p>We do not sell, trade, or otherwise transfer your personal information to outside parties. Your shooting data stays on your device and/or your personal iCloud account.</p>
 
-        <h2>6. Your Rights</h2>
+        <h2>7. Your Rights</h2>
         <p>You have full control over your data:</p>
         <ul>
             <li>You can delete all your data at any time through the app's Settings → App Data → Full Reset</li>
             <li>You can disable iCloud sync in your device's iCloud settings</li>
             <li>You can manage or cancel your subscription at any time through your Apple ID settings</li>
+            <li>You can turn off Session Notifications and Daily Notifications independently in the app's Settings</li>
+            <li>To request deletion of analytics data tied to your install's anonymous identifier, contact us using the email below</li>
         </ul>
 
-        <h2>7. Children's Privacy</h2>
+        <h2>8. Children's Privacy</h2>
         <p>Hoops does not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
 
-        <h2>8. Changes to This Policy</h2>
+        <h2>9. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
 
-        <h2>9. Contact Us</h2>
+        <h2>10. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us at:</p>
         <p><a href="mailto:landonwest815@gmail.com">landonwest815@gmail.com</a></p>
 
